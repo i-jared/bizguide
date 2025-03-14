@@ -1,0 +1,61 @@
+interface State {
+  name: string;
+  code: string;
+  instructions: string;
+}
+
+const states: State[] = [
+  { name: 'Alabama', code: 'AL', instructions: 'Instructions for registering an LLC in Alabama...' },
+  { name: 'Alaska', code: 'AK', instructions: 'Instructions for registering an LLC in Alaska...' },
+  { name: 'Arizona', code: 'AZ', instructions: 'Instructions for registering an LLC in Arizona...' },
+  { name: 'Arkansas', code: 'AR', instructions: 'Instructions for registering an LLC in Arkansas...' },
+  { name: 'California', code: 'CA', instructions: 'Instructions for registering an LLC in California...' },
+  { name: 'Colorado', code: 'CO', instructions: 'Instructions for registering an LLC in Colorado...' },
+  { name: 'Connecticut', code: 'CT', instructions: 'Instructions for registering an LLC in Connecticut...' },
+  { name: 'Delaware', code: 'DE', instructions: 'Instructions for registering an LLC in Delaware...' },
+  { name: 'Florida', code: 'FL', instructions: 'Instructions for registering an LLC in Florida...' },
+  { name: 'Georgia', code: 'GA', instructions: 'Instructions for registering an LLC in Georgia...' },
+  { name: 'Hawaii', code: 'HI', instructions: 'Instructions for registering an LLC in Hawaii...' },
+  { name: 'Idaho', code: 'ID', instructions: 'Instructions for registering an LLC in Idaho...' },
+  { name: 'Illinois', code: 'IL', instructions: 'Instructions for registering an LLC in Illinois...' },
+  { name: 'Indiana', code: 'IN', instructions: 'Instructions for registering an LLC in Indiana...' },
+  { name: 'Iowa', code: 'IA', instructions: 'Instructions for registering an LLC in Iowa...' },
+  { name: 'Kansas', code: 'KS', instructions: 'Instructions for registering an LLC in Kansas...' },
+  { name: 'Kentucky', code: 'KY', instructions: 'Instructions for registering an LLC in Kentucky...' },
+  { name: 'Louisiana', code: 'LA', instructions: 'Instructions for registering an LLC in Louisiana...' },
+  { name: 'Maine', code: 'ME', instructions: 'Instructions for registering an LLC in Maine...' },
+  { name: 'Maryland', code: 'MD', instructions: 'Instructions for registering an LLC in Maryland...' },
+  { name: 'Massachusetts', code: 'MA', instructions: 'Instructions for registering an LLC in Massachusetts...' },
+  { name: 'Michigan', code: 'MI', instructions: 'Instructions for registering an LLC in Michigan...' },
+  { name: 'Minnesota', code: 'MN', instructions: 'Instructions for registering an LLC in Minnesota...' },
+  { name: 'Mississippi', code: 'MS', instructions: 'Instructions for registering an LLC in Mississippi...' },
+  { name: 'Missouri', code: 'MO', instructions: 'Instructions for registering an LLC in Missouri...' },
+  { name: 'Montana', code: 'MT', instructions: 'Instructions for registering an LLC in Montana...' },
+  { name: 'Nebraska', code: 'NE', instructions: 'Instructions for registering an LLC in Nebraska...' },
+  { name: 'Nevada', code: 'NV', instructions: 'Instructions for registering an LLC in Nevada...' },
+  { name: 'New Hampshire', code: 'NH', instructions: 'Instructions for registering an LLC in New Hampshire...' },
+  { name: 'New Jersey', code: 'NJ', instructions: 'Instructions for registering an LLC in New Jersey...' },
+  { name: 'New Mexico', code: 'NM', instructions: 'Instructions for registering an LLC in New Mexico...' },
+  { name: 'New York', code: 'NY', instructions: 'Instructions for registering an LLC in New York...' },
+  { name: 'North Carolina', code: 'NC', instructions: 'Instructions for registering an LLC in North Carolina...' },
+  { name: 'North Dakota', code: 'ND', instructions: 'Instructions for registering an LLC in North Dakota...' },
+  { name: 'Ohio', code: 'OH', instructions: 'Instructions for registering an LLC in Ohio...' },
+  { name: 'Oklahoma', code: 'OK', instructions: 'Instructions for registering an LLC in Oklahoma...' },
+  { name: 'Oregon', code: 'OR', instructions: 'Instructions for registering an LLC in Oregon...' },
+  { name: 'Pennsylvania', code: 'PA', instructions: 'Instructions for registering an LLC in Pennsylvania...' },
+  { name: 'Rhode Island', code: 'RI', instructions: 'Instructions for registering an LLC in Rhode Island...' },
+  { name: 'South Carolina', code: 'SC', instructions: 'Instructions for registering an LLC in South Carolina...' },
+  { name: 'South Dakota', code: 'SD', instructions: 'Instructions for registering an LLC in South Dakota...' },
+  { name: 'Tennessee', code: 'TN', instructions: 'Instructions for registering an LLC in Tennessee...' },
+  { name: 'Texas', code: 'TX', instructions: 'Instructions for registering an LLC in Texas...' },
+  { name: 'Utah', code: 'UT', instructions: 'Instructions for registering an LLC in Utah...' },
+  { name: 'Vermont', code: 'VT', instructions: 'Instructions for registering an LLC in Vermont...' },
+  { name: 'Virginia', code: 'VA', instructions: 'Instructions for registering an LLC in Virginia...' },
+  { name: 'Washington', code: 'WA', instructions: 'Instructions for registering an LLC in Washington...' },
+  { name: 'West Virginia', code: 'WV', instructions: 'Instructions for registering an LLC in West Virginia...' },
+  { name: 'Wisconsin', code: 'WI', instructions: 'Instructions for registering an LLC in Wisconsin...' },
+  { name: 'Wyoming', code: 'WY', instructions: 'Instructions for registering an LLC in Wyoming...' },
+  { name: 'District of Columbia', code: 'DC', instructions: 'Instructions for registering an LLC in District of Columbia...' }
+];
+
+export default states;
