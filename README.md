@@ -52,3 +52,10 @@ export default tseslint.config({
   },
 })
 ```
+
+# TODO:
+- [ ] create a browser use agent that verifies all the instructions for each state one by one, updating them if necessary. 
+- [ ] create a browser use agent that follows the instructions and registers a business in a state for a user
+- [ ] create a ui to facillitate info exchange between agent and user
+- [ ] use an llm to rank the states in order from easiest to hardest based on the verified instructions
+
