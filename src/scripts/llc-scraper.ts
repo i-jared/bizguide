@@ -1,5 +1,5 @@
-import { Agent } from '@browser-use/browser-use';
-import { ChatOpenAI } from '@langchain/openai';
+import { Agent, BrowserProfile } from 'browser-use';
+import { ChatOpenAI } from 'browser-use/llm/openai';
 import * as fs from 'fs';
 import * as path from 'path';
 import { config } from 'dotenv';
@@ -146,7 +146,7 @@ async function main() {
   }
 
   const llm = new ChatOpenAI({
-    modelName: "gpt-4o",
+    model: "gpt-4o",
     temperature: 0.2,
   });
 
@@ -158,14 +158,17 @@ async function main() {
       const agent = new Agent({
         task: createPrompt(state),
         llm,
-        recordVideo: true,
-        videoPath: path.join(process.cwd(), 'llc-data', `${state.abbr}-recording.mp4`),
+        browser_profile: new BrowserProfile({
+          record_video_dir: path.join(process.cwd(), 'llc-data', `${state.abbr}-recording`),
+        }),
       });
       
       const result = await agent.run();
       
       // Save the results
-      saveResults(state, result);
+      const finalResult = result.final_result();
+      if (!finalResult) throw new Error('Research agent returned no final result');
+      saveResults(state, finalResult);
       
       // Update the progress file
       updateProgressFile(state);
